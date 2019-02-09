@@ -6,6 +6,7 @@
         "@material-ui/core": "3.0.2",
         "@material-ui/icons": "3.0.1",
         "auth0-lock": "11.9.0",
+        "autoprefixer": "9.1.5",
         "autosuggest-highlight": "3.1.1",
         "axios": "0.18.0",
         "axios-mock-adapter": "1.15.0",
@@ -46,6 +47,7 @@
         "react-text-mask": "5.4.3",
         "redux": "4.0.0",
         "redux-thunk": "2.3.0",
+        "tailwindcss": "0.6.5",
         "typeface-roboto": "0.0.54",
         "velocity-react": "1.4.1"
     },
@@ -60,10 +62,8 @@
     "devDependencies": {
         "@babel/core": "7.0.0-rc.1",
         "@babel/preset-env": "7.0.0-rc.1",
-        "autoprefixer": "9.1.5",
         "js-beautify": "1.8.4",
         "marked": "0.5.0",
-        "postcss-cli": "6.0.0",
-        "tailwindcss": "0.6.5"
+        "postcss-cli": "6.0.0"
     }
 }
