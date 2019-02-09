@@ -11,6 +11,7 @@
         "axios-mock-adapter": "1.15.0",
         "babel-polyfill": "6.26.0",
         "chart.js": "2.7.2",
+        "cross-env": "^5.2.0",
         "downshift": "2.2.2",
         "firebase": "5.4.2",
         "formsy-react": "1.1.4",
@@ -49,8 +50,8 @@
         "velocity-react": "1.4.1"
     },
     "scripts": {
-        "start": "cross-env NODE_PATH=src react-scripts start",
-        "build": "cross-env NODE_PATH=src react-scripts build",
+        "start": "yarn run build-css-helpers && cross-env NODE_PATH=src react-scripts start",
+        "build": "yarn run build-css-helpers && cross-env NODE_PATH=src react-scripts build",
         "build-css-helpers": "./node_modules/.bin/tailwind build ./src/styles/fuse-helpers.tailwind.css -c ./tailwind.js -o ./src/styles/fuse-helpers.css && postcss --use autoprefixer -o ./src/styles/fuse-helpers.css ./src/styles/fuse-helpers.css",
         "test": "cross-env NODE_PATH=src react-scripts test --env=jsdom",
         "eject": "cross-env NODE_PATH=src react-scripts eject",
@@ -60,7 +61,6 @@
         "@babel/core": "7.0.0-rc.1",
         "@babel/preset-env": "7.0.0-rc.1",
         "autoprefixer": "9.1.5",
-        "cross-env": "5.2.0",
         "js-beautify": "1.8.4",
         "marked": "0.5.0",
         "postcss-cli": "6.0.0",
